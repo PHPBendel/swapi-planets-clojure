@@ -13,7 +13,3 @@ To start a web server for the application, run:
     lein run 
 
 Be aware that you must change the default credentials on `db.clj` according to your datomic configuration before running anything.
-
-## License
-
-Copyright © 2019 FIXME
