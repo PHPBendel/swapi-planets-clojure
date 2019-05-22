@@ -1,0 +1,231 @@
+{
+:reitit.core/match #reitit.core.Match   {
+:template /planets,
+:data      {
+:middleware         [
+            #object            [
+               sw_planets.middleware$wrap_csrf 0x1c840a2e sw_planets.middleware$wrap_csrf@1c840a2e
+            ]            #object            [
+               sw_planets.middleware$wrap_formats 0x598697da sw_planets.m
+iddleware$wrap_formats@598697da
+            ]
+         ],
+:get         {
+:handler #object            [
+               sw_planets.routes.home$get_all_planets 0x2c056b25 sw_planets.routes.home$get_all_planets@2c056b25
+            ]
+         }
+      },
+:result #reitit.ring.Methods      {
+:get #reitit.ring.Endpoint         {
+:data            {
+:middleware               [
+                  #o
+bject                  [
+                     sw_planets.middleware$wrap_csrf 0x1c840a2e sw_planets.middleware$wrap_csrf@1c840a2e
+                  ]                  #object                  [
+                     sw_planets.middleware$wrap_formats 0x598697da sw_planets.middleware$wrap_formats@598697da
+                  ]
+               ],
+:handler #object               [
+                  sw_planets.routes.home$get_al
+l_planets 0x2c056b25 sw_planets.routes.home$get_all_planets@2c056b25
+               ]
+            },
+:handler #object            [
+               ring.middleware.anti_forgery$wrap_anti_forgery$fn__6758 0x547c0d87 ring.middleware.anti_forgery$wrap_anti_forgery$fn__6758@547c0d87
+            ],
+:path /planets,
+:            method:get,
+:middleware            [
+               #reitit.middleware.Middleware               {
+:name nil,
+:wrap #object                  [
+                     sw_planets.middleware$wrap_csrf 0x1c840a2e sw_planets.middleware$wrap_csrf@1c840a2e
+                  ],
+:spec nil
+               }               #reitit.middleware.Middleware               {
+:name nil,
+:wrap #object                  [
+                     sw_
+planets.middleware$wrap_formats 0x598697da sw_planets.middleware$wrap_formats@598697da
+                  ],
+:spec nil
+               }
+            ]
+         },
+:head nil,
+:post nil,
+:put nil,
+:delete nil,
+:connect nil,
+:options #reitit.ring.Endpoint         {
+:data            {
+:middleware               [
+                  #object                  [
+                     sw_planets.middleware$wrap_csrf 0x1c840a2e sw_planets.middleware$wrap_csrf@1c840a2e
+                  ]                  #object                  [
+                     sw_planets.middleware$wrap_formats 0x598697da sw_planets.middleware$wrap_formats@598697da
+                  ]
+               ],
+:get               {
+:handler #object                  [
+                     sw_planets.routes.home$get_all_planets 0x2c056
+b25 sw_planets.routes.home$get_all_planets@2c056b25
+                  ]
+               },
+:handler #object               [
+                  reitit.ring$default_options_handler 0x3ef270c6 reitit.ring$default_options_handler@3ef270c6
+               ],
+:no-doc true
+            },
+:handler #object            [
+               ring.middleware.anti_forgery$wrap_anti_forgery$fn__6758 0x7b5c3bee ring.middleware.anti_forgery$wrap_anti_forgery$fn__6758@7b5c3bee
+            ],
+:path /planets,
+:            method:options,
+:middleware            [
+               #reitit.middleware.Middleware               {
+:name nil,
+:wrap #object                  [
+                     sw_planets.middleware$wrap_csrf 0x1c840a2e
+ sw_planets.middleware$wrap_csrf@1c840a2e
+                  ],
+:spec nil
+               }               #reitit.middleware.Middleware               {
+:name nil,
+:wrap #object                  [
+                     sw_planets.middleware$wrap_formats 0x598697da sw_planets.middleware$wrap_formats@598697da
+                  ],
+:spec nil
+               }
+            ]
+         },
+:trace nil,
+:patch nil
+      },
+:path-params      {
+
+      },
+:path /planets
+   },
+:reitit.core/router #object   [
+      reitit.core$mixed_router$reify__17007 0x32a09d12 reitit.core$mixed_router$reify__17007@32a09d12
+   ],
+:ssl-client-cert nil,
+:cookies   {
+      JSESSIONID      {
+:value UjUyxA16arOfhDzYfjwfPivX
+acRpr8XeJerkAVR4
+      }
+   },
+:remote-addr 127.0.0.1,
+:params   {
+:name pedro
+   },
+:flash nil,
+:   handler-type:undertow,
+:headers   {
+      host localhost:3000,
+      user-agent Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0      ) Gecko/20100101 Firefox/66.0,
+      cookie JSESSIONID=UjUyxA16arOfhDzYfjwfPivXacRpr8XeJerkAVR4,
+      connection keep-alive,
+      upgrade-insecure-requests 1,
+      pragma no-cache,
+      accept text/html,
+      application/xhtml+xml,
+      application/xml;q=0.9,
+      */*;q=0.8,
+      accept-language en-US,
+      en;q=0.5,
+      accept-encoding gzi
+p,
+      deflate,
+      cache-control no-cache
+   },
+:server-port 3000,
+:muuntaja/request nil,
+:content-length -1,
+:form-params   {
+
+   },
+:server-exchange #object   [
+      io.undertow.server.HttpServerExchange 0x3c677536 HttpServerExchange      {
+         GET /planets request         {
+            Accept
+=            [
+               text/html,
+               application/xhtml+xml,
+               application/xml;q=0.9,
+               */*;q=0.8
+            ],
+            Accept-Language=            [
+               en-US,
+               en;q=0.5
+            ],
+            Cache-Control=            [
+               no-cache
+            ],
+            Accept-Encoding=            [
+               gzip,
+               deflate
+            ],
+            Pragma=            [
+               no-cache
+            ],
+            User-Agent=            [
+               Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66               .
+0) Gecko/20100101 Firefox/66.0
+            ],
+            Connection=            [
+               keep-alive
+            ],
+            Cookie=            [
+               JSESSIONID=UjUyxA16arOfhDzYfjwfPivXacRpr8XeJerkAVR4
+            ],
+            Upgrade-Insecure-Requests=            [
+               1
+            ],
+            Host=            [
+               localhost:3000
+            ]
+         }         response         {
+            Server=            [
+               undertow
+            ]
+         }
+      }
+   ],
+:query-params   {
+      name pedro
+   },
+:con
+tent-type nil,
+:path-info /planets,
+:character-encoding ISO-8859-1,
+:context,
+:uri /planets,
+:server-name localhost,
+:anti-forgery-token hwIYuwS9zNd8D0z/7O6tOOCzJ//Wmnl7whfpmTKtVe1AY7UkdawCDatr+6uPtp4SWwewpbWN9CslI/uA,
+:query-string name
+=pedro,
+:path-params   {
+
+   },
+:muuntaja/response #FormatAndCharset   {
+:format application/json,
+:charset utf-8,
+:raw-format text/html
+   },
+:body #object   [
+      io.undertow.io.UndertowInputStream 0x3858f662 io.undertow.io.UndertowInputStream@3858f662
+   ],
+:multipart-params   {
+
+   },
+:   scheme:http,
+:   request-method:get,
+:session   {
+:ring.middleware.anti-forgery/anti-forgery-token hwIYuwS9zNd8D0z/7O6tOOCzJ//Wmnl7whfpmTKtVe1AY7UkdawCDatr+6uPtp4SWwewpbWN9CslI/uA
+   }
+}
